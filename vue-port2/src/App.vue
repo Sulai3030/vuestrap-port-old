@@ -1,6 +1,6 @@
 <template>
 <div>
-  <b-jumbotron bg-variant="info" text-variant="white" border-variant="dark">
+  <b-jumbotron bg-variant="info" text-variant="white" border-variant="dark" style=”background-color:#0A548C”>
     <template v-slot:header>Sulai Sivadel
 </template>
     <template v-slot:lead>Ambitious, user-focused Full Stack Web Developer with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast and has created projects using HTML5, CSS, JavaScript, ReactJS, ands VueJS.
@@ -57,13 +57,17 @@
                     <h1 class="mb-0"><span class="text-primary"></span></h1>
                     <div class="subheading mb-5"><a href="mailto:sulai3030@gmail.com"></a></div>
                     <p class="lead mb-5"></p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/sulai3030/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/Sulai3030"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://twitter.com/sulai2020"><i class="fab fa-twitter"></i></a>
-                        <a class="mailtoui" href="mailto:sulai3030@gmail.com">Contact Sulai</a>
-                        
-                    </div>
+                    <div class="hello">
+    <facebook :url="url" scale="3"></facebook>
+    <twitter :url="url" title="Check me on Github" scale="3"></twitter>
+    <linkedin :url="url" scale="3"></linkedin>
+    <telegram :url="url" scale="3"></telegram>
+    <whats-app :url="url" title="Hello" scale="3"></whats-app>
+    <pinterest :url="url" scale="3"></pinterest>
+    <reddit :url="url" scale="3" title="My Github"></reddit>
+    <google :url="url" scale="3"></google>
+    <email :url="url" subject="Hello" scale="3"></email>
+  </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -294,7 +298,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 /* Global styles */
 .btn {
   padding: 0.8rem 1rem 0.7rem;
@@ -402,5 +407,15 @@ export default {
   text-align: center;
   margin: 0;
   margin-bottom: 1rem;
+}
+.bg-info{
+  background-color: #0A548C !important;
+}
+.navbar-nav{
+  padding:1rem;
+  word-spacing: 30px;
+}
+.a{
+  word-spacing:30px;
 }
 </style>
