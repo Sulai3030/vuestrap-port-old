@@ -7,69 +7,32 @@
     </template>
     <hr class="my-4">
   </b-jumbotron>
-  <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#"></b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-link to="home">Home</b-link>
-        <b-link to="About">About</b-link>
-        <b-link to="Experience">Experience</b-link>
-        <b-link to="home">Education</b-link>
-        <b-link to="home">Skills</b-link>
-        <b-link to="home">Interests</b-link>
-        <b-link to="home">Certifications</b-link>
-        <b-link to="home">Blog</b-link>
-      </b-navbar-nav>
-
+  <div>
+  <b-nav tabs>
+        <b-nav-item active>Home</b-nav-item>
+        <b-nav-item>About</b-nav-item>
+        <b-nav-item>Experience</b-nav-item>
+        <b-nav-item>Education</b-nav-item>
+        <b-nav-item>Skills</b-nav-item>
+        <b-nav-item>Interests</b-nav-item>
+        <b-nav-item>Certifications</b-nav-item>
+        <b-nav-item>Blog</b-nav-item>
+        <b-nav-item>CONTACT ME</b-nav-item>
+  </b-nav>
+  </div>
       <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-        </b-nav-form>
-
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown right>
-          <!-- Using 'button-content' slot -->
-          <template v-slot:button-content>
-          </template>
-          
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
+      
+  </b-container>
   </b-navbar>
   <b-container fluid="xl">
-  
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
-            <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0"><span class="text-primary"></span></h1>
-                    <div class="subheading mb-5"><a href="mailto:sulai3030@gmail.com"></a></div>
+                    <b-link href="#sulai3030@gmail.com"></b-link>
                     <p class="lead mb-5"></p>
-                    <div class="hello">
-    <facebook :url="url" scale="3"></facebook>
-    <twitter :url="url" title="Check me on Github" scale="3"></twitter>
-    <linkedin :url="url" scale="3"></linkedin>
-    <telegram :url="url" scale="3"></telegram>
-    <whats-app :url="url" title="Hello" scale="3"></whats-app>
-    <pinterest :url="url" scale="3"></pinterest>
-    <reddit :url="url" scale="3" title="My Github"></reddit>
-    <google :url="url" scale="3"></google>
-    <email :url="url" subject="Hello" scale="3"></email>
-  </div>
                 </div>
-            </section>
             <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
@@ -274,13 +237,15 @@ import { JumbotronPlugin } from 'bootstrap-vue'
 (JumbotronPlugin)
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import routes from './routes'
+
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+
+
 
 export default {
   data() {
