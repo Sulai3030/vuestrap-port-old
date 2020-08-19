@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="app">
   <b-jumbotron bg-variant="info" text-variant="white" border-variant="dark" style=”background-color:#0A548C”>
     <template v-slot:header>Sulai Sivadel
 </template>
@@ -8,22 +8,22 @@
     <hr class="my-4">
   </b-jumbotron>
   <div>
+  <div id="nav">  
   <b-nav tabs>
-        <b-nav-item active>Home</b-nav-item>
-        <b-nav-item>About</b-nav-item>
-        <b-nav-item>Experience</b-nav-item>
-        <b-nav-item>Education</b-nav-item>
-        <b-nav-item>Skills</b-nav-item>
-        <b-nav-item>Interests</b-nav-item>
-        <b-nav-item>Certifications</b-nav-item>
-        <b-nav-item>Blog</b-nav-item>
-        <b-nav-item>CONTACT ME</b-nav-item>
+        <router-link to="/"><b-nav-item active>Home</b-nav-item></router-link>
+        <router-link to="/about"><b-nav-item>About</b-nav-item></router-link>
+        <router-link to="/experience"><b-nav-item>Experience</b-nav-item></router-link>
+        <router-link to="/education"><b-nav-item>Education</b-nav-item>
+        <router-link to="/skills"><b-nav-item>Skills</b-nav-item></router-link>
+        <router-link to="/interests"><b-nav-item>Interests</b-nav-item></router-link>
+        <router-link to="certifications"><b-nav-item>Certifications</b-nav-item></router-link>
+        <router-link to="/blog"><b-nav-item>Blog</b-nav-item></router-link>
+        <router-link to="/contact"><b-nav-item>CONTACT ME</b-nav-item>
   </b-nav>
+  </div>
   </div>
       <!-- Right aligned nav items -->
       
-  </b-container>
-  </b-navbar>
   <b-container fluid="xl">
         <!-- Page Content-->
         <div class="container-fluid p-0">
